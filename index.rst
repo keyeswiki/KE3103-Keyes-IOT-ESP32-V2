@@ -1,7 +1,7 @@
 
 .. toctree::
    :maxdepth: 3
-   :caption: keyestudio KE3103
+   :caption: keyestudio KE3103 Starter
 
    README.md
    docs/1.产品介绍

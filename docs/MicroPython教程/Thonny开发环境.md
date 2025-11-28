@@ -16,11 +16,11 @@ Thonny是一个免费、开源的软件平台，体积小，界面简单，操�
 
 - Windows系统：
 
-  链接: https://pan.baidu.com/s/1LNCP-fBc-P_SrdiMuaeijg?pwd=te7y 提取码: te7y
+  链接: [https://pan.baidu.com/s/1LNCP-fBc-P_SrdiMuaeijg?pwd=te7y](https://pan.baidu.com/s/1LNCP-fBc-P_SrdiMuaeijg?pwd=te7y) 提取码: te7y
 
 - Mac系统：
 
-  链接: https://pan.baidu.com/s/1Qd7ShCmdWUlR7KQJ7kyzCA?pwd=ee41 提取码: ee41
+  链接: [https://pan.baidu.com/s/1Qd7ShCmdWUlR7KQJ7kyzCA?pwd=ee41](https://pan.baidu.com/s/1Qd7ShCmdWUlR7KQJ7kyzCA?pwd=ee41) 提取码: ee41
 
  **<span style="color: rgb(255, 0, 65);">注意：本教程使用的是 4.1.7 版本，请保持一致，以免出现代码不兼容情况。</span>**
 
@@ -111,8 +111,6 @@ Language 选择 **简体中文** 。然后单击 **Let's go!** 结束设置。
 
 #### 8.2.3.1 下载Micropython固件
 
-打开microPython的ESP32固件网址，下载固件。
-
 本教程中使用的固件是：**esp32-20210902-v1.17.bin** 。我们的资料中也提供了此版本的固件，路径如下图。(<span style="color: rgb(255, 76, 65);">提醒：这里是以 **MicroPython资料\MicroPython_库文件** 文件夹转移到D盘为例，你可以将下载的**MicroPython资料** 文件夹复制粘贴到D盘。</span>)
 
 ![img](./media/4102.png)
@@ -165,7 +163,7 @@ Language 选择 **简体中文** 。然后单击 **Let's go!** 结束设置。
 
 ![Img](./media/4103.png)
 
-2\. 打开 Thonny IDE 并在顶部的菜单栏中，单击 “ **视图** -> **文件** ”。
+2\. 打开 Thonny IDE，并在顶部的菜单栏中，单击 “ **视图** -> **文件** ”。
 
 ![Img](./media/5304.png)
 
@@ -176,7 +174,7 @@ Language 选择 **简体中文** 。然后单击 **Let's go!** 结束设置。
 
 ![Img](./media/5306.png)
 
-4\. 选中 <span style="color: rgb(255, 76, 65);">Python_库文件</span> 文件夹中的 **i2c_lcd\.py** 文件，鼠标右键单击 **i2c_lcd\.py** 文件，然后选择 “**<span style="color: rgb(255, 76, 65);">上传到/</span>**” ，这样，**i2c_lcd\.py** 文件被上传到 “**MicroPython 设备**” 驱动器中。
+4\. 选中 <span style="color: rgb(255, 76, 65);">MicroPython_库文件</span> 文件夹中的 **i2c_lcd\.py** 文件，鼠标右键单击 **i2c_lcd\.py** 文件，然后选择 “**<span style="color: rgb(255, 76, 65);">上传到/</span>**” ，这样，**i2c_lcd\.py** 文件被上传到 “**MicroPython 设备**” 驱动器中。
 
 ![Img](./media/5307.png)
 
@@ -196,7 +194,7 @@ Language 选择 **简体中文** 。然后单击 **Let's go!** 结束设置。
 
 ![Img](./media/5309.png)
 
-**特别提醒：** 如果添加某些库文件后，发现不再需要它们，也是可以删除它们的，这里是以 **i2c_lcd\.py** 库文件为例的。一般来说，在对应的套件项目教程中，添加好的库文件，是不需要把它们删除的。
+**<span style="color: rgb(255, 76, 65);">特别提醒：</span>** 如果添加某些库文件后，发现不再需要它们，也是可以删除它们的，这里是以 **i2c_lcd\.py** 库文件为例的。一般来说，在对应的套件项目教程中，添加好的库文件，是不需要把它们删除的。
 
 ![Img](./media/5313.png)
 

@@ -1,7 +1,7 @@
 
 .. toctree::
    :maxdepth: 3
-   :caption: keyestudio KE3103 Starter
+   :caption: KE3103 Keyes IOT ESP32智能家居套件V2
 
    README.md
    docs/1.产品介绍

@@ -1,0 +1,349 @@
+<script defer src="main.bundle.js"></script>
+<category id="smart_home" name="ESP32 智能家居" colour="20">
+
+  <!--          模拟输出               -->
+  <block type="ke_a_Write">
+    <value name="PIN">
+      <shadow type="pins_pwm">
+      </shadow>
+    </value>
+    <value name="NUM">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+
+  <!--         LED               -->
+
+  <block type="ke_led">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+  </block>
+
+  <!--          蜂鸣器               -->
+
+  <block type="ke_tone01"></block>
+
+  <block type="ke_buzzer">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+    <value name="FREQUENCY">
+      <shadow type="ke_tone01">
+      </shadow>
+    </value>
+  </block>
+
+
+  <block type="ke_music">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+
+  </block>
+
+
+  <block type="ke_notone">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+  </block>
+
+
+  <block type="ke_motor2">
+    <value name="PIN1">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+    <value name="PIN2">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+    <value name="SPEED2">
+      <shadow type="math_number">
+        <field name="NUM">255</field>
+      </shadow>
+    </value>
+  </block>
+
+  <!--      servo 舵机        	 -->
+
+
+  <block type="ke_servo">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+    <value name="angle">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="time">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="ke_servo_r">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+  </block>
+
+
+  <!--          人体红外传感器               -->
+
+  <block type="ke_ir_g">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+  </block>
+
+
+  <!--          按键传感器               -->
+  <block type="ke_button">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+  </block>
+
+
+  <!--          烟雾数字传感器               -->
+  <block type="ke_smoke_D">
+    <value name="PIN">
+      <shadow type="pins_digital">
+      </shadow>
+    </value>
+  </block>
+
+
+  <!--      水蒸气传感器            -->
+  <block type="ke_steam">
+    <value name="PIN">
+      <shadow type="pins_analog">
+      </shadow>
+    </value>
+  </block>
+
+
+  <!--              烟雾传感器              -->
+  <block type="ke_smoke">
+    <value name="PIN">
+      <shadow type="pins_analog">
+      </shadow>
+    </value>
+  </block>
+
+
+  <!--              温湿度传感器              -->
+
+  <block type="ke_DHT"></block>
+
+  <!--            2812RGB灯               -->
+  <block type="RGB_color_seclet">
+    <field name="COLOR">#ff0000</field>
+  </block>
+
+  <block type="RGB_color_rgb">
+    <value name="R">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="G">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+
+
+  <block type="display_rgb_init">
+    <value name="LEDCOUNT">
+      <shadow type="math_number">
+        <field name="NUM">4</field>
+      </shadow>
+    </value>
+    <value name="Brightness">
+      <shadow type="math_number">
+        <field name="NUM">20</field>
+      </shadow>
+    </value>
+  </block>
+
+
+  <block type="display_rgb_Brightness">
+    <value name="Brightness">
+      <shadow type="math_number">
+        <field name="NUM">20</field>
+      </shadow>
+    </value>
+  </block>
+
+
+  <block type="display_rgb">
+    <value name="_LED_">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="COLOR">
+      <shadow type="math_number">
+        <field name="NUM">
+        </field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="display_rgb_show">
+  </block>
+
+
+  <block type="display_rgb_rainbow1">
+    <value name="WAIT">
+      <shadow type="math_number">
+        <field name="NUM">20</field>
+      </shadow>
+    </value>
+    <value name="Brightness">
+      <shadow type="math_number">
+        <field name="NUM">20</field>
+      </shadow>
+    </value>
+  </block>
+
+
+  <block type="display_rgb_rainbow3">
+    <value name="rainbow_color">
+      <shadow type="math_number">
+        <field name="NUM">20</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="RGB_color_HSV">
+    <value name="_LED_">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="H">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="S">
+      <shadow type="math_number">
+        <field name="NUM">255</field>
+      </shadow>
+    </value>
+    <value name="V">
+      <shadow type="math_number">
+        <field name="NUM">255</field>
+      </shadow>
+    </value>
+  </block>
+
+
+  <!--                1602LCD                    -->
+  <block type="group_lcd_init2">
+    <value name="device">
+      <shadow type="math_number">
+        <field name="NUM">0x27</field>
+      </shadow>
+    </value>
+    <value name="SCL">
+        <shadow type="pins_digital">
+            <field name="PIN">22</field>
+        </shadow>
+    </value>
+    <value name="SDA">
+        <shadow type="pins_digital">
+            <field name="PIN">21</field>
+        </shadow>
+    </value>
+  </block>
+
+  <block type="group_lcd_print">
+    <value name="TEXT">
+      <shadow type="text">
+        <field name="TEXT"></field>
+      </shadow>
+    </value>
+
+    <value name="TEXT2">
+      <shadow type="text">
+        <field name="TEXT"></field>
+      </shadow>
+    </value>
+  </block>
+
+
+  <block type="group_lcd_power">
+    <field name="STAT">clear</field>
+  </block>
+
+
+  <!--          rfid_iic              -->
+
+  <block type="rc522_i2c_init"></block>
+
+  <block type="rc522_i2c_read"></block>
+
+
+  <!--         蓝牙              -->
+  <block type="ke_bluetooth">
+    <value name="PIN1">
+      <shadow type="pins_digital"></shadow>
+    </value>
+    <value name="PIN2">
+      <shadow type="pins_digital"></shadow>
+    </value>
+  </block>
+
+  <block type="wifi_init">
+    <value name="SSID">
+      <shadow type="text">
+        <field name="TEXT">ChinaNet-2.4G-0DF0</field>
+      </shadow>
+    </value>
+    <value name="PASSWD">
+      <shadow type="text">
+        <field name="TEXT">ChinaNet@233</field>
+      </shadow>
+    </value>
+  </block>
+
+    <block type="wifi_read_ip">
+    </block>
+
+    <block type="wifi_client_init">
+    </block>
+
+    <block type="wifi_client_connected">
+    </block>
+
+    <block type="wifi_send_data">
+    </block>
+
+    <block type="wifi_read_data">
+    </block>
+
+
+</category>

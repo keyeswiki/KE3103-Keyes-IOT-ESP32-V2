@@ -95,7 +95,7 @@
 
 ### 7.2.3.1 选择设备
 
-⚠️ **特别注意：** 该套件中使用的设备是 Smart home for ESP32，关于导入Smart home for ESP32设备的方法，请参考以下内容。如果是导入其他的设备(或开发板)，其方法类似，可以参考。
+⚠️ **特别注意：** 该套件中使用的设备是 Smart home ESP32，关于导入Smart home ESP32设备的方法，请参考以下内容。如果是导入其他的设备(或开发板)，其方法类似，可以参考。
 
 1\. 确保ESP32主控板与计算机连接成功，然后双击 “**KidsBlock**” 图标![Img](./media/KidsBlock.png)打开KidsBlock软件。
 
@@ -105,7 +105,7 @@
 
 ![Img](./media/Equip-1.png)
 
-3\. 由于本教程使用的是 Smart farm for ESP32 设备，所以选择 “**Smart farm for ESP32**” 设备，如下图所示：
+3\. 由于本教程使用的是 Smart home ESP32 设备，所以选择 “**Smart home ESP32**” 设备，如下图所示：
 
 ![Img](./media/Equip-3.png)
 

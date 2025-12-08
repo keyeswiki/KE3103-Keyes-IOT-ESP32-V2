@@ -105,11 +105,11 @@
 
 ![Img](./media/Equip-1.png)
 
-3\. 由于本教程使用的是 Smart home ESP32 设备，所以选择 “**Smart home ESP32**” 设备，如下图所示：
+3\. 由于本教程使用的是 Smart home ESP32 设备，所以点击选中 “**Smart home ESP32**” 设备，如下图所示：
 
 ![Img](./media/Equip-3.png)
 
-4\. 连接串口端口(COM3)，点击 “**连接**”，如下图所示：
+4\. 连接串口端口(COM30)，点击 “**连接**”，如下图所示：
 
 ![Img](./media/Equip-4.png)
 
